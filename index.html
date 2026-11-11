@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Dạ Tuần Privacy</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@600;700&family=Noto+Sans:wght@400;600&family=Noto+Sans+SC:wght@400;600&family=Noto+Sans+JP:wght@400;600&family=Noto+Sans+KR:wght@400;600&display=swap">
+<style>
+/* Layout: one narrow reading column, a talisman-yellow language strip, sections as plain headed blocks */
+:root {
+  --bg: #f6f2ea; --fg: #221a18; --muted: #6b5f5a; --line: #ddd2c6;
+  --accent: #9d1c14; --chip: #efe3c6; --chip-fg: #4a3410;
+  --display: "Noto Serif", Georgia, "Times New Roman", serif;
+  --body: "Noto Sans", "Noto Sans SC", "Noto Sans JP", "Noto Sans KR", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #120d0d; --fg: #ece4dc; --muted: #a89b94; --line: #33282a; --accent: #e0574a; --chip: #2d2316; --chip-fg: #f0d9a2; color-scheme: dark } }
+:root[data-theme="dark"] { --bg: #120d0d; --fg: #ece4dc; --muted: #a89b94; --line: #33282a; --accent: #e0574a; --chip: #2d2316; --chip-fg: #f0d9a2; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 16px; line-height: 1.65; }
+.wrap { max-width: 44rem; margin: 0 auto; padding-block: 40px 64px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid; gap: 28px; }
+header { display: grid; gap: 6px; }
+.seal { font-family: var(--display); color: var(--accent); font-size: 14px; letter-spacing: .14em; text-transform: uppercase; }
+h1 { font-family: var(--display); font-size: clamp(28px, 6vw, 40px); line-height: 1.15; margin: 0; text-wrap: balance; }
+.updated { color: var(--muted); font-size: 14px; }
+nav { display: flex; flex-wrap: wrap; gap: 8px; }
+nav button { font: 600 14px var(--body); padding: 6px 14px; border-radius: 999px; border: 1px solid var(--line);
+  background: transparent; color: var(--fg); cursor: pointer; }
+nav button[aria-pressed="true"] { background: var(--chip); color: var(--chip-fg); border-color: var(--chip); }
+nav button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+section.lang { display: grid; gap: 22px; }
+h2 { font-family: var(--display); font-size: 20px; margin: 0 0 4px; text-wrap: balance; }
+p, ul { margin: 0; max-width: 65ch; }
+ul { padding-left: 1.2em; display: grid; gap: 4px; }
+.block { display: grid; gap: 6px; padding-top: 18px; border-top: 1px solid var(--line); }
+.summary { background: var(--chip); color: var(--chip-fg); padding: 14px 16px; border-radius: 6px; }
+.contact { font-weight: 600; user-select: all; overflow-wrap: anywhere; }
+footer { color: var(--muted); font-size: 13px; }
+</style>
+</head><body>
+
+<div class="wrap">
+  <header>
+    <div class="seal">夜巡 · Dạ Tuần</div>
+    <h1 id="h1">Chính sách quyền riêng tư</h1>
+    <div class="updated" id="upd">Cập nhật: 11/11/2026</div>
+  </header>
+  <nav aria-label="Language">
+    <button data-l="vi" aria-pressed="true">Tiếng Việt</button>
+    <button data-l="en" aria-pressed="false">English</button>
+    <button data-l="zh" aria-pressed="false">中文</button>
+    <button data-l="ja" aria-pressed="false">日本語</button>
+    <button data-l="ko" aria-pressed="false">한국어</button>
+  </nav>
+
+  <section class="lang" data-lang="vi">
+    <p class="summary">Dạ Tuần không thu thập, không lưu trên máy chủ và không chia sẻ bất kỳ dữ liệu cá nhân nào của bạn.</p>
+    <div class="block"><h2>Camera</h2><p>Game dùng camera để đặt hiện trường điều tra vào căn phòng của bạn (thực tế tăng cường – AR). Hình ảnh camera chỉ được xử lý trực tiếp trên iPhone, không được ghi lại, lưu trữ hay gửi đi đâu.</p></div>
+    <div class="block"><h2>Dữ liệu lưu trên máy</h2><p>Tiến độ các vụ án, số sao, túi bùa, ngôn ngữ đã chọn được lưu ngay trên iPhone của bạn. Xoá app là xoá toàn bộ dữ liệu này.</p></div>
+    <div class="block"><h2>Không có</h2><ul><li>Không tài khoản, không đăng nhập.</li><li>Không quảng cáo, không theo dõi (tracking), không công cụ phân tích của bên thứ ba.</li><li>Không kết nối mạng để gửi dữ liệu.</li></ul></div>
+    <div class="block"><h2>Trẻ em</h2><p>Game có nội dung kinh dị, không dành cho trẻ em, và không cố ý thu thập dữ liệu của bất kỳ ai, kể cả trẻ em.</p></div>
+    <div class="block"><h2>Hỗ trợ và liên hệ</h2><p>Gặp lỗi hoặc có câu hỏi, hãy gửi email tới:</p><p class="contact">hauhc93@gmail.com</p><p>Nếu chính sách này thay đổi, ngày cập nhật ở đầu trang sẽ thay đổi theo.</p></div>
+  </section>
+
+  <section class="lang" data-lang="en" hidden>
+    <p class="summary">Dạ Tuần does not collect, store on any server, or share any of your personal data.</p>
+    <div class="block"><h2>Camera</h2><p>The game uses the camera to place the investigation scene in your room (augmented reality, AR). Camera images are processed live on your iPhone only; they are never recorded, stored or sent anywhere.</p></div>
+    <div class="block"><h2>Data kept on your device</h2><p>Case progress, stars, your talisman bag and your chosen language are saved on your iPhone. Deleting the app deletes all of it.</p></div>
+    <div class="block"><h2>What the game does not have</h2><ul><li>No accounts, no sign-in.</li><li>No ads, no tracking, no third-party analytics.</li><li>No network connection used to send data.</li></ul></div>
+    <div class="block"><h2>Children</h2><p>The game contains horror content and is not intended for children. It does not knowingly collect data from anyone, including children.</p></div>
+    <div class="block"><h2>Support and contact</h2><p>For bugs or questions, email:</p><p class="contact">hauhc93@gmail.com</p><p>If this policy changes, the date at the top of this page changes with it.</p></div>
+  </section>
+
+  <section class="lang" data-lang="zh" hidden>
+    <p class="summary">夜巡（Dạ Tuần）不收集、不在任何服务器上存储、也不分享你的任何个人数据。</p>
+    <div class="block"><h2>相机</h2><p>游戏使用相机把调查现场放进你的房间（增强现实 AR）。相机画面只在你的 iPhone 上实时处理，不会被录制、存储或发送到任何地方。</p></div>
+    <div class="block"><h2>保存在设备上的数据</h2><p>案件进度、星级、符袋和所选语言保存在你的 iPhone 上。删除应用即会删除这些数据。</p></div>
+    <div class="block"><h2>游戏没有的东西</h2><ul><li>没有账号，无需登录。</li><li>没有广告、没有追踪、没有第三方分析工具。</li><li>不通过网络发送任何数据。</li></ul></div>
+    <div class="block"><h2>儿童</h2><p>本游戏含恐怖内容，不适合儿童，不会有意收集任何人（包括儿童）的数据。</p></div>
+    <div class="block"><h2>支持与联系</h2><p>如遇问题或有疑问，请发送邮件至：</p><p class="contact">hauhc93@gmail.com</p><p>本政策如有变更，页面顶部的日期会随之更新。</p></div>
+  </section>
+
+  <section class="lang" data-lang="ja" hidden>
+    <p class="summary">夜巡（Dạ Tuần）は、あなたの個人データを収集せず、サーバーに保存せず、共有もしません。</p>
+    <div class="block"><h2>カメラ</h2><p>ゲームはカメラを使い、調査の現場をあなたの部屋に配置します（拡張現実 AR）。カメラ映像は iPhone 上でリアルタイムに処理されるだけで、録画・保存・送信されることはありません。</p></div>
+    <div class="block"><h2>端末に保存されるデータ</h2><p>事件の進行状況、星、札袋、選んだ言語は iPhone 内に保存されます。アプリを削除するとすべて消去されます。</p></div>
+    <div class="block"><h2>このゲームにないもの</h2><ul><li>アカウント・ログインはありません。</li><li>広告、トラッキング、第三者の解析ツールはありません。</li><li>データを送信するためのネットワーク通信は行いません。</li></ul></div>
+    <div class="block"><h2>子どもについて</h2><p>本作はホラー表現を含み、子ども向けではありません。子どもを含め、誰のデータも意図的に収集しません。</p></div>
+    <div class="block"><h2>サポート・お問い合わせ</h2><p>不具合やご質問は次のメールまで：</p><p class="contact">hauhc93@gmail.com</p><p>本ポリシーを変更した場合は、ページ上部の日付を更新します。</p></div>
+  </section>
+
+  <section class="lang" data-lang="ko" hidden>
+    <p class="summary">야순(Dạ Tuần)은 당신의 개인 데이터를 수집하거나, 서버에 저장하거나, 공유하지 않습니다.</p>
+    <div class="block"><h2>카메라</h2><p>게임은 카메라로 조사 현장을 당신의 방 안에 배치합니다(증강현실 AR). 카메라 영상은 iPhone에서 실시간으로만 처리되며 녹화·저장·전송되지 않습니다.</p></div>
+    <div class="block"><h2>기기에 저장되는 데이터</h2><p>사건 진행 상황, 별, 부적 주머니, 선택한 언어는 iPhone에 저장됩니다. 앱을 삭제하면 모두 삭제됩니다.</p></div>
+    <div class="block"><h2>게임에 없는 것</h2><ul><li>계정이나 로그인이 없습니다.</li><li>광고, 추적, 제3자 분석 도구가 없습니다.</li><li>데이터를 보내기 위한 네트워크 연결을 사용하지 않습니다.</li></ul></div>
+    <div class="block"><h2>아동</h2><p>이 게임은 공포 콘텐츠를 담고 있어 어린이를 대상으로 하지 않으며, 아동을 포함한 누구의 데이터도 의도적으로 수집하지 않습니다.</p></div>
+    <div class="block"><h2>지원 및 문의</h2><p>버그나 문의 사항은 아래 이메일로 보내 주세요:</p><p class="contact">hauhc93@gmail.com</p><p>정책이 바뀌면 페이지 상단의 날짜도 함께 바뀝니다.</p></div>
+  </section>
+
+  <footer>© 2026 Dạ Tuần</footer>
+</div>
+
+<script>
+(function () {
+  var T = {
+    vi: ["Chính sách quyền riêng tư", "Cập nhật: 11/11/2026"],
+    en: ["Privacy Policy", "Updated: 11 November 2026"],
+    zh: ["隐私政策", "更新日期：2026 年 11 月 11 日"],
+    ja: ["プライバシーポリシー", "更新日：2026 年 11 月 11 日"],
+    ko: ["개인정보 처리방침", "업데이트: 2026년 11월 11일"]
+  };
+  function show(l) {
+    if (!T[l]) l = "vi";
+    document.querySelectorAll("section.lang").forEach(function (s) { s.hidden = s.dataset.lang !== l; });
+    document.querySelectorAll("nav button").forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.l === l ? "true" : "false"); });
+    document.getElementById("h1").textContent = T[l][0];
+    document.getElementById("upd").textContent = T[l][1];
+    document.documentElement.lang = l === "zh" ? "zh-Hans" : l;
+  }
+  document.querySelectorAll("nav button").forEach(function (b) {
+    b.addEventListener("click", function () { location.hash = b.dataset.l; show(b.dataset.l); });
+  });
+  window.addEventListener("hashchange", function () { show(location.hash.slice(1)); });
+  var start = location.hash.slice(1);
+  if (!T[start]) {
+    var nl = (navigator.language || "vi").toLowerCase();
+    start = ["vi", "en", "zh", "ja", "ko"].find(function (c) { return nl.indexOf(c) === 0; }) || "en";
+  }
+  show(start);
+})();
+</script>
+</body></html>
